@@ -1,4 +1,4 @@
-add_library(sqlite SHARED sqlite3.c)
+add_library(sqlite STATIC sqlite3.c)
 target_compile_definitions(
   sqlite PRIVATE 
   "SQLITE_ENABLE_MATH_FUNCTIONS"
